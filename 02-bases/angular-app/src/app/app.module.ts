@@ -1,20 +1,20 @@
+import { DbzModule } from './dbz/dbz.module';
+import { CounterModule } from './counter/counter.module';
 import { NgModule } from '@angular/core';
+import { HeroesModule } from './heroes/heroes.module';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HeroComponent } from './heroes/hero/hero.component';
-import { CounterComponent } from './counter/counter.component';
-import { ListComponent } from './heroes/list/list.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeroComponent,
-    CounterComponent,
-    ListComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    CounterModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
